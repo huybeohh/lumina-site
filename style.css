@@ -1,0 +1,46 @@
+
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#eef2f3;--fg:#14212a;--card:#fff;--acc:#0e5a63;--hi:#e8b84a;--mut:#62737c;--line:#d6dfe2;--ok:#237a4b;--bad:#b3392f}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1a20;--fg:#e6eef1;--card:#17262e;--acc:#5cc0c9;--mut:#93a7b0;--line:#27393f}}
+:root[data-theme=dark]{--bg:#0f1a20;--fg:#e6eef1;--card:#17262e;--acc:#5cc0c9;--mut:#93a7b0;--line:#27393f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 'Be Vietnam Pro',system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.15;margin:0}
+a{color:inherit;text-decoration:none;cursor:pointer}.wrap{max-width:1180px;margin:auto;padding:0 16px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--card);border-bottom:1px solid var(--line)}
+.hd{display:flex;gap:14px;align-items:center;padding:10px 16px;flex-wrap:wrap}.logo{font-size:22px}.logo b{color:var(--acc)}
+.sr{flex:1;min-width:200px;display:flex}.sr input{flex:1;border-radius:8px 0 0 8px}.sr button{border-radius:0 8px 8px 0}
+nav{display:flex;gap:16px;align-items:center}.cb span{background:var(--hi);color:#14212a;border-radius:99px;padding:1px 8px;font-size:12px;font-weight:600}
+.cats{display:flex;gap:18px;overflow-x:auto;padding:6px 16px;font-size:14px;color:var(--mut);white-space:nowrap}.cats a:hover{color:var(--acc)}
+input,select,textarea,button{font:inherit;color:inherit}input,select,textarea{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%}
+button,.btn{background:var(--acc);color:var(--bg);border:0;border-radius:8px;padding:9px 16px;cursor:pointer;font-weight:600;display:inline-block}
+.btn.o,button.o{background:none;color:var(--fg);border:1px solid var(--line)}button.d{background:var(--bad);color:#fff}button.s{padding:4px 10px;font-size:13px}
+:focus-visible{outline:2px solid var(--hi);outline-offset:2px}
+main{min-height:60vh;padding-bottom:40px}section{margin:36px auto}h2{font-size:26px;margin-bottom:16px}
+.hero{background:linear-gradient(120deg,#0b2a33,#14424c 60%,#1d5a66);color:#eaf4f6;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:20px;align-items:center;padding-top:40px;padding-bottom:40px}
+.hero h1{font-size:clamp(30px,5vw,52px)}.hero p{max-width:46ch;opacity:.85}.hero .btn{background:var(--hi);color:#14212a}
+.mir{position:relative;max-width:300px;margin:auto;width:100%}.mir svg{width:100%;display:block}
+.mir:after{content:"";position:absolute;inset:0;background:linear-gradient(var(--a,115deg),transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);mix-blend-mode:soft-light;pointer-events:none}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chips a{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:6px 14px}.chips a:hover{border-color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;position:relative}
+.ph{background:radial-gradient(circle at 30% 20%,var(--line),var(--bg));aspect-ratio:1;display:block}.ph svg{width:100%;height:100%}
+.card .in{padding:12px}.card h3{font-size:16px;font-family:'Be Vietnam Pro';font-weight:600}.old{text-decoration:line-through;color:var(--mut);font-size:13px;margin-left:6px}.pr{color:var(--acc);font-weight:600}
+.bdg{position:absolute;top:8px;left:8px;background:var(--hi);color:#14212a;font-size:12px;font-weight:600;padding:2px 8px;border-radius:99px}
+.hrt{position:absolute;top:6px;right:8px;background:none;color:var(--bad);font-size:20px;padding:2px}
+.tb{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin:16px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}table{width:100%;border-collapse:collapse;background:var(--card)}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:middle}.tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+.tag{font-size:12px;padding:2px 10px;border-radius:99px;background:var(--line)}.tag.g{background:var(--ok);color:#fff}.tag.r{background:var(--bad);color:#fff}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}.stat div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}.stat b{font-size:22px;display:block}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0}.tabs button{background:var(--card);color:var(--fg);border:1px solid var(--line)}.tabs .on{background:var(--acc);color:var(--bg)}
+form label{display:block;font-size:13px;color:var(--mut);margin-bottom:8px}.fg{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+#md{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:50;display:none;align-items:flex-start;justify-content:center;overflow:auto;padding:30px 12px}#md>div{background:var(--card);border-radius:12px;padding:20px;max-width:640px;width:100%}
+#ts{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);z-index:60;display:grid;gap:6px}#ts div{background:var(--fg);color:var(--bg);padding:10px 18px;border-radius:8px}#ts .e{background:var(--bad);color:#fff}
+footer{background:#0b2a33;color:#c9dde1;padding:30px 0;font-size:14px}footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}footer h3{color:#fff;font-size:17px;margin-bottom:6px}
+.emp{text-align:center;padding:50px 10px;color:var(--mut)}.bc{font-size:13px;color:var(--mut);margin:14px 0}.st{color:var(--hi)}
+@media(max-width:760px){.hero .wrap,.two,.fg{grid-template-columns:1fr}.mir{max-width:200px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+@media print{header,.tabs,.nop,.row button{display:none!important}}
